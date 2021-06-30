@@ -28,9 +28,67 @@
         <div class="container">
             <img src="/img/personal.png" alt="Личная информация" class="universal__img">
             <h2 class="universal__title">Личная информация</h2>
+            <input type="text" class="personal__input" id="fio" placeholder="Сергеев Евгений Михайлович">
+            <select name="select" id="year" class="personal__select">
+                <option value="1991">1991</option>
+                <option value="1992">1992</option>
+                <option value="1993">1993</option>
+                <option value="1994" selected >1994</option>
+                <option value="1995">1995</option>
+                <option value="1996">1996</option>
+                <option value="1997">1997</option>
+            </select>
+            <input type="text" class="personal__input" id="place" placeholder="Россия г.Саратов">
+            <input type="text" class="personal__input" id="skype" placeholder="в Skype не зарегистрирован">
+            <input type="email" class="personal__input" id="email" placeholder="sergeevem2007@gmail.com">
+        </div>
+    </section>
+
+    <section class="skills">
+        <div class="container">
+            <img src="/img/skills.png" alt="Расскажите о своем опыте" class="universal__img">
+            <h2 class="universal__title">Расскажите о своем опыте</h2>
+
+            <div class="skills__row">
+                <div class="skills__col">
+                    <label class="skills__text"><input type="checkbox" checked name="checkbox" class="skills__input">БЭМ/OOCSS</label>
+                    <label class="skills__text"><input type="checkbox" checked name="checkbox" class="skills__input">Stylus/LESS/SASS</label>
+                    <label class="skills__text"><input type="checkbox" checked name="checkbox" class="skills__input">Работаю с SVG</label>
+                </div>
+                <div class="skills__col">
+                    <label class="skills__text"><input type="checkbox" checked name="checkbox" class="skills__input">Верстаю семантично</label>
+                    <label class="skills__text"><input type="checkbox" checked name="checkbox" class="skills__input">ES2015/ES2016</label>
+                    <label class="skills__text"><input type="checkbox" checked name="checkbox" class="skills__input">Gulp/GRUNT</label>
+                </div>
+                <div class="skills__col">
+                    <label class="skills__text"><input type="checkbox" checked name="checkbox" class="skills__input">Webpack</label>
+                    <label class="skills__text"><input type="checkbox" checked name="checkbox" class="skills__input">jQuery</label>
+                    <label class="skills__text"><input type="checkbox" checked name="checkbox" class="skills__input">Ипользую Git</label>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="js">
+        <div class="container">
+            <img src="/img/js.png" alt="Уровень владения JavaScript" class="universal__img">
+            <h2 class="universal__title">Уровень владения JavaScript</h2>
         </div>
     </section>
     
+
+    <section class="about">
+        <div class="container">
+            <img src="/img/about.png" alt="Расскажите о себе" class="universal__img">
+            <h2 class="universal__title">Расскажите о себе</h2>
+            <p class="about__text">Напишите несколько предложений, чем привлекла наша вакансия
+                и что вы ожидаете от работы у нас.</p>
+
+            <textarea class="about__textarea" name="textarea" id="textarea" cols="30" rows="10">Понравилась тем,что могу зарабатывать дополнительные денежные средства и увеличивать навыки и опыт, совмещая с основной работой.</textarea>
+
+            <button class="about__button" type="submit">Готово</button>
+        </div>
+    </section>
 
 //= template/footer.html
 </body>
