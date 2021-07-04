@@ -109,8 +109,7 @@ gulp.task('css:build', function () {
 // сбор js
 gulp.task('js:build', function () {
     return gulp.src(path.src.js)                    // получим файл main.js
-        .pipe(plumber())                            // для отслеживания ошибок
-        .pipe(rigger())                             // импортируем все указанные файлы в main.js
+        .pipe(plumber())                            // для отслеживания ошибок                             // импортируем все указанные файлы в main.js
         .pipe(gulp.dest(path.build.js))
         .pipe(rename({ suffix: '.min' }))
         .pipe(uglify())                             // минимизируем js
